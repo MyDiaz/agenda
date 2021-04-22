@@ -1,0 +1,22 @@
+<div class="contacto">
+    <div>
+        <img src="{{contacto.foto}}"> 
+    </div> 
+    <div class="datosContacto">
+        <ul>
+            <li> {{contacto.nombre  }}</li>
+            <li> {{contacto.apellidos }}</li>
+            <li> {{contacto.direccion }}</li>
+            <li> {{contacto.correo }}</li>
+            <li> {{contacto.telefono }}</li>
+            <li [ngClass]="{ 'bloqueado': contacto.bloqueado, 'no-bloqueado': !contacto.bloqueado }">  </li>
+        </ul>
+<div class="botones">
+       <button class="btn-positivo"> Editar </button>
+        <button class="btn-negativo"> Bloquear </button> 
+    </div>
+        
+    </div>
+    
+    
+</div>
